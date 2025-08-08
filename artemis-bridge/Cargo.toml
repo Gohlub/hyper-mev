@@ -1,0 +1,29 @@
+[package]
+name = "artemis-bridge"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+# Artemis dependencies (native only, not WASM)
+artemis-core = { git = "https://github.com/paradigmxyz/artemis", branch = "main" }
+ethers = { version = "2.0", features = ["ws", "rustls"] }
+
+# Communication with Hyperware
+tokio = { version = "1.0", features = ["full"] }
+tokio-tungstenite = "0.20"
+futures-util = "0.3"
+url = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Aave-specific
+async-trait = "0.1"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Utils
+uuid = { version = "1.4", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }

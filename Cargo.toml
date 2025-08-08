@@ -1,0 +1,11 @@
+[profile.release]
+lto = true
+opt-level = "s"
+panic = "abort"
+
+[workspace]
+members = [
+    "hyper-mev",
+    "target/caller-utils",
+]
+resolver = "2"

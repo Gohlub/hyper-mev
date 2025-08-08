@@ -1,0 +1,72 @@
+# Rust build artifacts
+/target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# Generated files
+/api/
+/target/
+
+# Package directory - IMPORTANT: This is intentionally NOT ignored
+# The pkg directory contains compiled AND uncompiled; don't commit compiled
+# /pkg/
+/pkg/*.zip
+/pkg/*.wasm
+/pkg/ui/
+
+# UI dependencies and build
+/ui/node_modules/
+/ui/dist/
+/ui/.vite/
+**/node_modules/
+**/dist/
+*.log
+
+# Build artifacts
+# Rust build files
+*.d
+*.rlib
+*.rmeta
+*.dylib
+*.so
+*.dll
+*.exe
+*.pdb
+debug/
+release/
+*.timestamp
+
+# WASM artifacts
+*.wasm
+!wasi_snapshot_preview1.wasm
+
+# Incremental compilation
+incremental/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+**/DS_Store
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*~
+CACHEDIR.TAG
+
+# Example apps build artifacts
+/resources/example-apps/**/target/
+/resources/example-apps/**/pkg/*.zip
+/resources/example-apps/**/pkg/*.wasm
+/resources/example-apps/**/ui/dist/
+/resources/example-apps/**/ui/node_modules/
+
+# Artemis bridge specific
+/artemis-bridge/target/

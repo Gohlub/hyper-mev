@@ -1,0 +1,19 @@
+[
+  {
+    "process_name": "hyper-mev",
+    "process_wasm_path": "/hyper-mev.wasm",
+    "on_exit": "Restart",
+    "request_networking": false,
+    "request_capabilities": [
+      "homepage:homepage:sys",
+      "http-server:distro:sys",
+      "vfs:distro:sys"
+    ],
+    "grant_capabilities": [
+      "homepage:homepage:sys",
+      "http-server:distro:sys",
+      "vfs:distro:sys"
+    ],
+    "public": false
+  }
+]
