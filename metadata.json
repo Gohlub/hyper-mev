@@ -5,7 +5,7 @@
   "properties": {
     "package_name": "hyper-mev",
     "current_version": "0.1.0",
-    "publisher": "skeleton.os",
+    "publisher": "template.os",
     "mirrors": [],
     "code_hashes": {
       "0.1.0": ""
